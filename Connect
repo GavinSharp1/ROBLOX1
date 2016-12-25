@@ -76,4 +76,5 @@ NC('music',function(msg)
     SID = msg
     Ox('Music is now '..game:GetService('MarketplaceService'):GetProductInfo(tonumber(SID)).Name)
 end)
+Player.Chatted:connect(function(msg)	if msg:lower():sub(1,3) == '/e ' then		msg = msg:sub(4)	end	CheckChat(msg)end)
 CheckChat(msg)
