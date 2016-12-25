@@ -9,15 +9,15 @@ end
 end
 
 
-Ox('Loading All 5 Packages')
+Ox("Loading All 5 Packages")
 wait(8)
 Ox("Connecting to gavinsharp100'sb")
 wait(.9
-Ox('Connection Successful')
+Ox("Connection Successful")
 wait(2)
-Ox('Going IRC')
+Ox("Going IRC Chat")
 wait(2)
-Ox('SB you are now connected to Gavin')
+Ox("SB you are now connected to Gavin")
 
 game:GetService("Players").PlayerRemoving:connect(function(Player)
 Ox(Player.Name..' Has Disconected')
