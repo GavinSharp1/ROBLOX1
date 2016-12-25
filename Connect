@@ -11,7 +11,7 @@ end
 
 Ox("Loading All 5 Packages")
 wait(8)
-Ox("Connecting to gavinsharp100'sb")
+Ox("Connecting to gavinsharp100s sb")
 wait(.9
 Ox("Connection Successful")
 wait(2)
