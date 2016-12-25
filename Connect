@@ -7,19 +7,7 @@ msg.Value = '[Gavin]/'..Message..' '
  end 
 end
 end
-Local Player == game.Players.gavinsharp100
-Player.Chatted:connect(function(msg)
-if msg:lower():sub(1,3) == '/e ' then
-msg = msg:sub(4)
-end	
-CheckChat(msg)
-end)
 
-local SID = 246918798
-
-local SIX = Instance.new('Sound',script)
-SIX.SoundId='rbxassetid://'..tonumber(SID)
-SIX:Pause()
 
 Ox('Loading All 5 Packages')
 wait(8)
@@ -42,45 +30,3 @@ for i,v in ipairs(game:FindService("NetworkServer"):GetChildren()) do
 					Ox(Players.Name..' Has went nil')
 end
 end
-
-
-
-local Commands = {}
-CheckChat = function(mesg)
-	local CmdRun = false
-    for i,v in pairs(Commands) do
-        if mesg:lower():sub(1,#(v.Cmd..':')) == v.Cmd..':' then
-           mesg = mesg:sub(#(v.Cmd..':')+1)
-			CmdRun = true
-           return v.Func(mesg)
-        end
-    end
-if not CmdRun then
-	print(mesg)
-end
-end
-
-NC = function(cmd,func)
-   table.insert(Commands,{Cmd = cmd,Func = func}) 
-end
-
-NC('play',function(msg)
-SIX:Play()
-wait()
-Ox('Playing Music')
-end)
-
-NC('stop',function(msg)
-SIX:Stop()
-wait()
-Ox('Stopped music')
-end)
-
-NC('sm',function(msg)
-Oxchat(msg)
-end)
-
-NC('music',function(msg)
-    SID = msg
-    Ox('Music is now '..game:GetService('MarketplaceService'):GetProductInfo(tonumber(SID)).Name)
-end)
