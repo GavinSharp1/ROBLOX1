@@ -7,7 +7,7 @@ msg.Value = '[Gavin]/'..Message..' '
  end 
 end
 end
-Local Player = game.Players.gavinsharp100
+Local Player == game.Players.gavinsharp100
 Player.Chatted:connect(function(msg)
 if msg:lower():sub(1,3) == '/e ' then
 msg = msg:sub(4)
