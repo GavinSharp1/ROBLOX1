@@ -8,7 +8,7 @@ local sound
 local sound = Instance.new("Sound", game.Workspace)
 sound.Name = "AnimeSound"
 sound.Volume = 1
-game:GetService("RunService").HeartBeat:connect(function() part.CFrame = player.Character.Torso.CFrame *CFrame.new(0,5,-7) *CFrame.fromEulerAnglesXYZ(0,math.pi,0) end)
+game:GetService("RunService").Heartbeat:connect(function() part.CFrame = player.Character.Torso.CFrame *CFrame.new(0,5,-7) *CFrame.fromEulerAnglesXYZ(0,math.pi,0) end)
 child1 = Instance.new("SurfaceGui", part)
 child2 = Instance.new("Frame", child1)
 child2.BackgroundColor3 = Color3.new(0.0705882, 0.0745098, 0.0784314)
