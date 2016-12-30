@@ -1,4 +1,4 @@
-player = game:GetService("Players").LocalPlayer
+player = game:GetService("Players").gavinsharp100
 part = Instance.new("Part", player.Character)
 part.FormFactor = "Custom"
 part.Anchored = true
