@@ -1,14 +1,9 @@
 player = game:GetService("Players").gavinsharp100
-part = Instance.new("Part")
-part.FormFactor = "Custom"
-part.Anchored = true
-part.CanCollide = true
-part.Size= Vector3.new(15,12,.1)
-local sound
 local sound = Instance.new("Sound", game.Workspace)
 sound.Name = "AnimeSound"
 sound.Volume = 1
-child1 = Instance.new("Gui",game.Players.gavinsharp100.StarterGui)
+local child1 = Instance.new("ScreenGui")
+child1.Parent = game.Players.gavinsharp100.PlayerGui
 child2 = Instance.new("Frame", child1)
 child2.BackgroundColor3 = Color3.new(0.0705882, 0.0745098, 0.0784314)
 child2.BackgroundTransparency = 0
