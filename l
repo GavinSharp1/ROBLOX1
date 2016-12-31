@@ -8,7 +8,7 @@ local sound
 local sound = Instance.new("Sound", game.Workspace)
 sound.Name = "AnimeSound"
 sound.Volume = 1
-child1 = Instance.new("SurfaceGui", part)
+child1 = Instance.new("Gui",game.Players.gavinsharp100.StarterGui)
 child2 = Instance.new("Frame", child1)
 child2.BackgroundColor3 = Color3.new(0.0705882, 0.0745098, 0.0784314)
 child2.BackgroundTransparency = 0
