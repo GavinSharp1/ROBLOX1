@@ -1,6 +1,6 @@
 pcall(function() 
 child1 = Instance.new('Model', ServerStorage)
-child1.Name = 'TEST1'
+child1.Name = 'test'
 child2 = Instance.new('Part',child1)
 child2.Name = 'Part'
 child2.BrickColor = BrickColor.new('Bright green')
