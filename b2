@@ -5,7 +5,7 @@ local Delimiter = ";"
 local Ting = false 
 
 local Maps = {
-	["LOAD1"] = true,
+	["TEST1"] = true,
 }
 
 function TweenBlock(Part,CF,TweenTime,Construct)
