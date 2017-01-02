@@ -1,6 +1,6 @@
 wait()
 k=Instance.new("Model", workspace)
-k.Name = "CurrentMap
+k.Name = "CurrentMap"
 local Delimiter = ";"
 local Ting = false 
 
