@@ -1,16 +1,5 @@
 wait()
 
---[[ 
-	
-Give credit please. I put a lot of effort into this place and I would really like credit in the description.
-REMEMBER TO READ THE SCRIPT TITLED "Read this (do not delete at all) ~ Theorizing".
-
-Thanks
-      , Theorizing & Blazerulz (Lavalight Corp Members)
-
-PS: Do not change anything below, unless instructed to doing so in the other script.
-
-]]--
 local config = game.Workspace["Config"]
 local groupid = config.ID.Value
 local RankReq = config.RR.Value
